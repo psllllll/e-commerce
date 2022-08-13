@@ -1,0 +1,25 @@
+/*全局样式表*/
+html,body,#app{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+ }
+
+.entrpriseName .el-input__inner{
+    
+    text-decoration: none;
+    margin: 0px 0;
+    height: 45px;
+    width: 290px;
+    background-color: rgba(255, 255, 255, 0.55);
+    border: none;
+    border-radius: 4px;
+    padding: 0 32px;
+    color: #222b25;
+  }
