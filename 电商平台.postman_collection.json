@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "afbaba8d-7287-4416-8029-61b44d9d9b75",
+		"name": "电商平台",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21269004"
+	},
+	"item": [
+		{
+			"name": "/user/login success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\":\"476465455@qq.com\",\"password\":\"654321\"\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.3.49:8080/user/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"3",
+						"49"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/login failed",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\":\"476465455@qq.com\",\"password\":\"6543211\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/register 赵六",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account\":\"5243651265@qq.com\",\r\n    \"password\":\"123321\",\r\n    \"username\":\"赵六\",\r\n    \"mobile\":\"12093847562\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/info uid=2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uid\":2,\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjIsImFkZHJlc3MiOiLnv7vmlpfkuozooZciLCJzZXgiOiLlpbMiLCJtb2JpbGUiOiIxMjM0MzI0MTIzIiwiZXhwIjoxNjU5NjE0ODA1LCJhY2NvdW50IjoiNDc2NDY1NDU1QHFxLmNvbSIsInVzZXJuYW1lIjoi5p2O5ZubIn0.NafRElL6NNyPfL9DJfzqf082cI5GkZVYiOj4oimsBNI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.3.49:8080/user/info",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"3",
+						"49"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/user/update uid=2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOjIsImFkZHJlc3MiOiLnv7vmlpfkuozooZciLCJzZXgiOiLlpbMiLCJtb2JpbGUiOiIxMjM0MzI0MTIzIiwiZXhwIjoxNjU5NjE3NTM3LCJhY2NvdW50IjoiNDc2NDY1NDU1QHFxLmNvbSIsInVzZXJuYW1lIjoi5p2O5ZubIn0.x1b6dpwHt4fXcHaVW-AoNkqR4TzmDZ_GoN9x1S5Sqp0\",\r\n    \"uid\":\"2\",\r\n    \"username\":\"牛爷爷\",\r\n    \"account\":\"476465455@qq.com\",\r\n    \"sex\":\"男\",\r\n    \"mobile\":\"7865876512\",\r\n    \"address\":\"翻斗花园\"\r\n}"
+				},
+				"url": {
+					"raw": "http://192.168.3.49:8080/user/update",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"3",
+						"49"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
